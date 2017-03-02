@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Гордиевская](https://up.htmlacademy.ru/adaptive/10/user/197143).
-* Наставник: `Неизвестно`.
+* Наставник: `Аноним`.
 
 ---
 
