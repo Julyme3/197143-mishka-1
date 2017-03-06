@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин &laquo;Мишка&raquo; Сделать заказ</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+         <ul class="main-navigation__list">
+           <li class="main-navigation__item-list"><a class="main-navigation__link-logo" href="index.html"><img src="img/logo" alt="Логотип" width="88" height="37"></a></li>
+           <li class="main-navigation__item-list"><a href="catalog.html" class="main-navigation__link-list">Каталог товаров</a></li>
+           <li class="main-navigation__item-list"><a href="form.html" class="main-navigation__link-list">Вязание на заказ</a></li>
+           <li class="main-navigation__item-list"><a href="" class="main-navigation__link-list">Поиск по сайту</a></li>
+           <li class="main-navigation__item-list"><a href="" class="main-navigation__link-list">Корзина: пока пуста</a></li>
+           <li class="main-navigation__item-list"><a href="" class="main-navigation__link-list">Бесплатная доставка по России</a></li>
+           <li class="main-navigation__item-list"><a href="" class="main-navigation__link-list">Новые поступления</a></li>
+           <li class="main-navigation__item-list"><a href="" class="main-navigation__link-list">Распродажа</a></li>
+          </ul>
+        <span class="main-navigation__btn-burger"></span>
+      </nav>
+    </div>
+  </header>
+  <main class="form-main">
+    <header class="form-main__header">
+      <div class="form-main__inner">
+        <h1 class="form-main__title">Вязание на заказ</h1>
+      </div>
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    </header>
+    <div class="form">
+      <form  class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__fieldset form__fieldset-type">
+          <div class="form__inner-fieldset">
+            <b class="form__legend">Тип</b>
+            <input type="radio" class="form__radio" id="accessories" name="type">
+            <label for="accessories" class="form__label">Аксессуар для интерьера</label>
+            <input type="radio" class="form__radio" id="toys" name="type">
+            <label for="toys" class="form__label">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-color">
+          <div class="form__inner-fieldset">
+            <b class="form__legend">Цвет</b>
+            <div class="form__inner-label">
+              <input class="form__checkbox" type="checkbox" id="white" name="white">
+              <label class="form__label" for="white">Белый</label>
+              <input class="form__checkbox" type="checkbox" id="grey" name="grey">
+              <label for="grey" class="form__label">Серый</label>
+              <input class="form__checkbox" type="checkbox" id="tiffani" name="tiffani">
+              <label for="tiffani" class="form__label">&laquo;Тиффани&raquo;</label>
+              <input class="form__checkbox" type="checkbox" id="black" name="black">
+              <label for="black" class="form__label">Черный</label>
+              <input class="form__checkbox" type="checkbox" id="pink" name="pink">
+              <label for="pink" class="form__label">Розовый</label>
+              <input class="form__checkbox" type="checkbox" id="orange" name="orange">
+              <label for="orange" class="form__label">Оранжевый</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset__name">
+          <div class="form__inner-fieldset">
+            <b class="form__legend">ФИО</b>
+            <div class="form__inner-label">
+              <label for="firstname" class="form__label">Имя:</label>
+              <input type="text" id="firstname" placeholder="Введите ваше имя*" name="firstname">
+              <label for="lastname" class="form__label">Фамилия:</label>
+              <input type="text" id="lastname" placeholder="Укажите фамилию*" name="lastname">
+              <label for="patronymic" class="form__label">Отчество:</label>
+              <input type="text" id="patronymic" placeholder="Отчество, если желаете" name="patronymic">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-contacts">
+          <div class="form__inner-fieldset">
+            <label for="tel" class="form__label">Тел</label>
+            <input type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" name="tel">
+            <label for="email" class="form__label">E-mail</label>
+            <input class="form__input-email" type="email" id="email" placeholder="Ваш Email*" name="email">
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-comment">
+          <div class="form__inner-fieldset">
+            <label for="comment" class="form__label">Доп</label>
+            <textarea id="comment" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
+          </div>
+        </fieldset>
+        <div class="form__inner-btn">
+          <div class="form__snow-title"><sup>*</sup>Поля обязательны для заполнения</div>
+          <button type="submit" class="btn form__btn">Отправить заказ</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html"><img src="/img/" width="102" height="43" alt="Логотип магазина"></a>
+      <ul class="social">
+        <li class="social__item"><a href="" class="social__link">Инстаграм</a></li>
+        <li class="social__item"><a href="" class="social__link">Фейсбук</a></li>
+        <li class="social__item"><a href="" class="social__link">Твиттер</a></li>
+      </ul>
+      <div class="page-footer__copyright">Разработано</div>
+    </div>
+  </footer>
+</body>
+</html>
