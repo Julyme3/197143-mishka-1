@@ -1,0 +1,26 @@
+.form-main {
+  padding-bottom: 55px;
+}
+.form-main__header {
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+}
+.form-main__inner {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.form-main__title {
+  margin: 0;
+  font-size: $fsize-title-mobile;
+  line-height: 30px;
+}
