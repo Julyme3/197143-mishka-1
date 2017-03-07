@@ -1,0 +1,27 @@
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: $fsize-subtitle-mobile;
+  line-height: 30px;
+}
+.contacts__table {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  td {
+    padding-bottom: 40px;
+  }
+
+  tr:last-child td {
+    padding-bottom: 0;
+  }
+
+}
+.contacts__key {
+  padding-right: 30px;
+}
+.map__btn {
+  margin-top: 40px;
+}

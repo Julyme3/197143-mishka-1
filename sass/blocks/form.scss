@@ -1,0 +1,63 @@
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+  outline: 1px solid red;
+}
+.form__legend {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+.form__btn {
+  margin-top: 30px;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 15px 40px;
+}
+.form__label {
+  display: block;
+}
+.form__radio,
+.form__checkbox {
+  display: none;
+}
+.form__fieldset-type .form__label:nth-of-type(1) {
+  margin-bottom: 35px;
+}
+.form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.form__fieldset-color .form__label:not(:last-child) {
+  margin-bottom: 45px;
+}
+.form__fieldset__name input {
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.form__fieldset-contacts {
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 260px;
+    box-sizing: border-box;
+    border: 2px solid #444444;
+  }
+
+}
+.form__snow-title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}

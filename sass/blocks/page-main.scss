@@ -1,0 +1,15 @@
+.page-main {
+  margin-bottom: 40px;
+  outline: 1px solid red;
+}
+.page-main__inner {
+  padding-top: 75px;
+  padding-bottom: 155px;
+  background: #ffffff url("../img/bg-index-mobile.jpg") no-repeat 0 0;
+  outline: 2px solid green;
+}
+.page-main__title {
+  margin: 0;
+  font-size: $fsize-title-mobile;
+  line-height: 30px;
+}

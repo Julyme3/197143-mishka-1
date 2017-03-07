@@ -1,0 +1,28 @@
+.video-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  p {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+.video-block__title {
+  margin: 0;
+  padding-left: 60px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.video-block__inner {
+  margin-bottom: 35px;
+}
+.video-block__btn {
+  width: 190px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin-left: 30px;
+}

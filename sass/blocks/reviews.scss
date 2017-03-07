@@ -1,0 +1,44 @@
+.reviews {
+  padding-bottom: 50px;
+  margin-bottom: 45px;
+}
+.reviews__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: $fsize-subtitle-mobile;
+  line-height: 30px;
+}
+.reviews__wrapper {
+
+  blockquote {
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-body;
+  }
+
+  cite {
+    margin-bottom: 5px;
+  }
+
+}
+.reviews__author {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.reviews__nickname {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+.reviews__btn {
+  margin-top: 35px;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 15px 76px;
+}
