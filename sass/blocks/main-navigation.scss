@@ -63,21 +63,21 @@
     height: 22px;
     z-index: 20;
 
-     &::after,
-     &::before {
-       content: "";
-       position: absolute;
-       top: 0;
-       left: 10px;
-       width: 2px;
-       height: 22px;
-       transform: rotate(45deg);
-       background-color: #221f1f;
-     }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 2px;
+      height: 22px;
+      transform: rotate(45deg);
+      background-color: #221f1f;
+    }
 
-     &::before {
-       transform: rotate(-45deg);
-     }
+    &::before {
+      transform: rotate(-45deg);
+    }
 
   }
 

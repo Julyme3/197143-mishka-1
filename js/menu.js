@@ -13,4 +13,3 @@ btn.addEventListener("click", function(event) {
     menu.classList.remove("main-navigation--opened");
     }
 });
-
