@@ -1,3 +1,37 @@
 .catalog-product {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+}
+
+.catalog-product__wrapper {
+  @include container;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media #{$tablet-widths} {
+
+  .catalog-product {
+    margin-bottom: 23px;
+  }
+
+  .catalog-product__wrapper {
+    box-sizing: content-box;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .catalog-product {
+    margin-bottom: 55px;
+  }
+
+  .catalog-product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

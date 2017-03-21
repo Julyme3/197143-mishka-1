@@ -1,19 +1,67 @@
 .collections {
-  margin-bottom: 35px;
-  outline: 1px solid red;
+  margin-bottom: 29px;
 }
+
 .collections__link {
   display: block;
   text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-right: 130px;
+  padding-left: 32px;
   font-size: 19px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
 }
+
 .collections__link-interior {
   background-color: #63d1bb;
 }
+
 .collections__link-toys {
   background-color: #56c3b2;
+}
+
+.collections__item {
+  @include container;
+}
+
+@media #{$tablet-widths} {
+
+  .collections {
+    margin-bottom: 49px;
+  }
+
+  .collections__item {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .collections__link {
+    box-sizing: border-box;
+    width: 334px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 150px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .collections {
+    margin-bottom: 124px;
+  }
+
+  .collections__link {
+    width: 525px;
+    padding-right: 340px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
 }

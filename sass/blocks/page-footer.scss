@@ -2,10 +2,44 @@
   padding-top: 25px;
   padding-bottom: 20px;
   background-color: #f1f1f1;
-  outline: 1px solid red;
 }
+
 .page-footer__copyright {
+  padding-right: 58px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.page-footer__wrapper {
+  @include container;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+@media #{$mobile-widths-only} {
+
+  .page-footer__logo {
+    display: none;
+  }
+
+}
+
+@media #{$tablet-widths} {
+
+  .page-footer {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 }
