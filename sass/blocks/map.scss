@@ -1,5 +1,64 @@
+.map {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .map__btn {
   width: 260px;
   box-sizing: border-box;
   padding: 15px 45px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map__block {
+  width: 320px;
+  min-height: 457px;
+  background: #eeeeee url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+@media #{$tablet-widths} {
+
+  .map {
+    width: 768px;
+  }
+
+  .map__block {
+    width: 100%;
+  }
+
+  .map__btn {
+    margin-top: 56px;
+    width: 230px;
+    padding-left: 35px;
+    padding-right: 40px;
+    font-size: 17px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    width: 525px;
+    height: 388px;
+  }
+
+  .map__block {
+    height: 100%;
+    width: 100%;
+    margin-top: -68px;
+  }
+
+  .map__btn {
+    margin-top: auto;
+    margin-right: 118px;
+  }
+
 }
