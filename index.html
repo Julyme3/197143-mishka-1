@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Магазин &laquo;Мишка&raquo;</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -110,7 +112,7 @@
         </table>
       </div>
       <div class="map">
-        <div class="map__block">Карта</div>
+        <div class="map__block" id="map"></div>
         <a href="" class="btn map__btn">Напишите нам</a>
       </div>
     </section>
@@ -141,6 +143,8 @@
       </form>
     </div>
   </div>
+  <div class="popup-overlay"></div>
   <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 </html>
