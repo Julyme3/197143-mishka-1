@@ -24,6 +24,14 @@
   border-bottom: 2px solid #62d1ba;
 }
 
+.contacts__table tr:first-child .contacts__value:hover {
+  color: #46c1ae;
+}
+
+.contacts__table tr:first-child .contacts__value:active {
+  opacity: 0.3;
+}
+
 .contacts__inner {
   margin-bottom: 35px;
 }
@@ -70,10 +78,22 @@
   }
 
   .contacts__title {
+    position: relative;
     margin-bottom: 46px;
     font-size: $fsize-title-tablet;
     line-height: 50px;
     padding-left: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -18px;
+      right: 45px;
+      width: 50px;
+      height: 80px;
+      background: url("../img/icon-flag.svg") no-repeat 0 0;
+    }
+
   }
 
   .contacts__table {
@@ -110,7 +130,6 @@
     width: 1050px;
     padding-right: 50px;
     padding-left: 50px;
-    margin-bottom: 105px;
   }
 
   .contacts__inner {
@@ -118,7 +137,7 @@
     margin-right: 45px;
     box-sizing: border-box;
     align-self: flex-start;
-    padding-left: 175px;
+    padding-left: 172px;
     padding-right: 0;
     margin-bottom: 0;
   }
@@ -126,6 +145,12 @@
   .contacts__title {
     font-size: $fsize-title-desktop;
     line-height: 57px;
+
+    &:after {
+      left: -110px;
+      top: -7px;
+    }
+
   }
 
   .contacts__table {
