@@ -63,6 +63,11 @@
   line-height: 16px;
   color: #444444;
   font-weight: 700;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
 }
 
 .popup__form input[type="radio"]:checked + .popup__label {

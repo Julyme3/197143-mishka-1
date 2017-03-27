@@ -25,12 +25,12 @@
 @media #{$tablet-widths} {
 
   .page-header__wrapper {
-    margin-bottom: -83px;
+    margin-bottom: -76px;
     padding-left: 50px;
     padding-right: 50px;
 
     &::after {
-      top: 91px;
+      top: 95px;
     }
 
   }
@@ -40,7 +40,12 @@
 @media #{$desktop-widths} {
 
   .page-header__wrapper {
-    margin-bottom: -82px;
+    margin-bottom: -80px;
+
+    &:after {
+      top: 93px;
+    }
+
   }
 
 }

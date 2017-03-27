@@ -27,6 +27,45 @@
   padding-bottom: 22.5px;
 }
 
+.main-navigation__logo {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.main-navigation__icon-svg {
+  fill: #d3d2d2;
+}
+
+.main-navigation__link-list[href]  {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.main-navigation__link-list:hover .main-navigation__icon-search,
+.main-navigation__link-list:hover .main-navigation__icon-cart {
+  fill: #63d1bb;
+}
+
+.main-navigation__link-list:active .main-navigation__icon-search,
+.main-navigation__link-list:active .main-navigation__icon-cart {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
 @media #{$mobile-widths-only} {
 
   .main-navigation {
@@ -81,8 +120,12 @@
 
   }
 
-  .main-navigation--closed .main-navigation__item-list:not(:first-child) {
+  .main-navigation--closed .main-navigation__item-list {
     display: none;
+  }
+
+  .main-navigation--closed .main-navigation__item-list:first-child {
+    display: block;
   }
 
   .main-navigation--closed .main-navigation__btn-burger {
@@ -111,13 +154,48 @@
     display: none;
   }
 
+  .main-navigation--nojs .main-navigation__btn-burger {
+    display: none;
+  }
+
   .main-navigation--nojs .main-navigation__list {
     position: static;
+    height: auto;
+  }
+
+  .main-navigation--nojs .main-navigation__item-list {
+    display: block;
+  }
+
+  .main-navigation--nojs .main-navigation__item-list:nth-child(n+6) {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__link-list {
+    padding-bottom: 27px;
+    padding-bottom: 27px;
   }
 
   .main-navigation__link-list {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .main-navigation__logo-tb,
+  .main-navigation__logo-desktop {
+    display: none;
+  }
+
+  .main-navigation__item-list:nth-child(4) .main-navigation__link-list,
+  .main-navigation__item-list:nth-child(5) .main-navigation__link-list {
+    padding-left: 0;
+    margin-left: -4px;
+  }
+
+  .main-navigation__icon-search,
+  .main-navigation__icon-cart {
+    padding-right: 25px;
+    vertical-align: middle;
   }
 
 }
@@ -153,7 +231,7 @@
   .main-navigation__item-list:nth-child(2) .main-navigation__link-list,
   .main-navigation__item-list:nth-child(3) .main-navigation__link-list,
   .main-navigation__item-list:nth-child(6) .main-navigation__link-list {
-    padding-top: 16px;
+    padding-top: 12px;
   }
 
   .main-navigation__item-list:nth-child(3) {
@@ -189,6 +267,38 @@
     font-weight: 400;
   }
 
+  .main-navigation__link-logo {
+    width: 115px;
+    height: 48px;
+  }
+
+  .main-navigation__logo-mobile,
+  .main-navigation__logo-desktop {
+    display: none;
+  }
+
+  .main-navigation__item-list:first-child {
+    margin-right: 177px;
+  }
+
+  .main-navigation__item-list:nth-child(4) .main-navigation__link-list {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-bottom: 28px;
+    padding-top: 35px;
+    font-size: 0;
+  }
+
+  .main-navigation__item-list:nth-child(5) .main-navigation__link-list {
+    padding-left: 0;
+  }
+
+  .main-navigation__icon-cart {
+    padding-right: 26px;
+    vertical-align: middle;
+
+  }
+
 }
 
 @media #{$desktop-widths} {
@@ -204,7 +314,8 @@
   }
 
   .main-navigation__item-list:nth-child(4) .main-navigation__link-list {
-    padding-top: 28px;
+    padding-top: 36px;
+    padding-bottom: 25px;
   }
 
   .main-navigation__item-list:nth-child(5) .main-navigation__link-list {
@@ -224,7 +335,7 @@
   }
 
   .main-navigation__item-list:nth-child(1) {
-    margin-right: 177px;
+    margin-right: 23px;
   }
 
   .main-navigation__item-list:nth-child(2) {
@@ -256,36 +367,29 @@
 
   .main-navigation__item-list:nth-child(6) {
     order: 1;
-
-//    a {
-//      padding-top: 14px;
-//    }
-
   }
 
   .main-navigation__item-list:nth-child(7) {
     margin-right: 55px;
-
-//    a {
-//      padding-top: 14px;
-//    }
-
   }
 
   .main-navigation__item-list:nth-child(8) {
     margin-right: auto;
-
-//    a {
-//      padding-top: 14px;
-//    }
-
   }
 
   .main-navigation__link-logo {
-    width: 150px;
-    height: 78px;
-    padding-top: 0;
-    padding-bottom: 0;
+    width: 151px;
+    height: 74px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .main-navigation__logo-tb {
+    display: none;
+  }
+
+  .main-navigation__logo-desktop {
+    display: block;
   }
 
 }

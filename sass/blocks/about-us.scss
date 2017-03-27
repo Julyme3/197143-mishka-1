@@ -16,12 +16,19 @@
 }
 
 .about-us__item {
+  position: relative;
   padding-top: 60px;
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
+.about-us__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
 .about-us__item:last-child {
   margin-bottom: 0;
 }
@@ -52,7 +59,7 @@
 @media #{$tablet-widths} {
 
   .about-us {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   .about-us__wrapper {
@@ -99,6 +106,36 @@
   .about-us__item:nth-child(n+4) {
     width: 294px;
     margin-right: 36px;
+  }
+
+  .about-us__icon-flower {
+    left: 12px;
+    top: 5px;
+  }
+
+  .about-us__icon-valuta {
+    left: 3px;
+    top: 5px;
+  }
+
+  .about-us__icon-heart {
+    left: 12px;
+    top: 8px;
+  }
+
+  .about-us__icon-cotton {
+    left: 6px;
+    top: 8px;
+  }
+
+  .about-us__icon-rocket {
+    left: -4px;
+    top: 8px;
+  }
+
+  .about-us__icon-surprise {
+    left: -4px;
+    top: 8px;
   }
 
 }
