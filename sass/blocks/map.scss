@@ -21,11 +21,11 @@
 }
 
 @media #{$mobile-widths-only} and (min-resolution: 144dpi),
-       #{$mobile-widths-only} and (min-resolution: 1.5dppx) {
+  #{$mobile-widths-only} and (min-resolution: 1.5dppx) {
 
-         .map__block {
-           background-image: url("../img/map-mobile@2x.jpg");
-         }
+    .map__block {
+      background-image: url("../img/map-mobile@2x.jpg");
+    }
 
 }
 
