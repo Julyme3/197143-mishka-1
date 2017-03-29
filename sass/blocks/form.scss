@@ -140,10 +140,23 @@
 
 }
 
-.form__fieldset-comment textarea:focus:placeholder,
-.form__fieldset__name input[type="text"]:focus:placeholder,
-input[type="tel"]:focus:placeholder,
-input[type="email"]:focus:placeholder {
+.form__fieldset-comment textarea:focus::placeholder {
+  opacity: 1;
+  color: #444444;
+}
+
+.form__fieldset__name input[type="text"]:focus::placeholder {
+  opacity: 1;
+  color: #444444;
+}
+
+input[type="tel"]:focus::placeholder {
+  opacity: 1;
+  color: #444444;
+}
+
+input[type="email"]:focus::placeholder {
+  opacity: 1;
   color: #444444;
 }
 
@@ -199,7 +212,7 @@ input {
   margin-bottom: 5px;
 }
 
-.form__fieldset__name input[type="text"]:placeholder {
+.form__fieldset__name input[type="text"]::placeholder {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
@@ -237,7 +250,7 @@ input {
   text-transform: uppercase;
 }
 
-.form__fieldset-comment textarea:placeholder {
+.form__fieldset-comment textarea::placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444;
@@ -257,7 +270,7 @@ input {
   margin-bottom: 25px;
 }
 
-.form__fieldset-contacts input:placeholder {
+.form__fieldset-contacts input::placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444;
@@ -498,11 +511,18 @@ input {
     margin-bottom: 0;
   }
 
-  .form__fieldset__name input[type="text"]:placeholder,
-  .form__fieldset-contacts input:placeholder,
-  .form__fieldset-comment textarea:placeholder {
+  .form__fieldset__name input[type="text"]::placeholder {
     font-size: 19px;
   }
+
+  .form__fieldset-contacts input::placeholder {
+    font-size: 19px;
+  }
+
+  .form__fieldset-comment textarea::placeholder {
+    font-size: 19px;
+  }
+
 
   .form__fieldset-contacts .form__inner-fieldset {
     justify-content: space-between;
@@ -603,11 +623,6 @@ input {
     font-size: 19px;
   }
 
-//  .form__fieldset-type .form__label:after {
-//    width: 45px;
-//    height: 45px;
-//  }
-
   .form__checkbox:checked + .form__label:after {
     left: 3px;
     border: -7px;
@@ -621,6 +636,13 @@ input {
   .form__icon-tel,
   .form__icon-email {
     right: 29px;
+  }
+
+  .form__fieldset-color .form__label-white,
+  .form__fieldset-color .form__label-tiffani,
+  .form__fieldset-color .form__label-pink {
+    padding-left: 73px;
+    width: 248px;
   }
 
 }
