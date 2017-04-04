@@ -3,7 +3,7 @@
   padding-bottom: 50px;
   margin-bottom: 39px;
 
-    &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -31,7 +31,7 @@
 
   blockquote {
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
     font-size: 15px;
     line-height: 30px;
     color: $color-body;
@@ -39,7 +39,8 @@
 
   cite {
     display: block;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
+    font-style: normal;
   }
 
 }
@@ -104,7 +105,7 @@
     margin-bottom: 61px;
     padding-bottom: 85px;
 
-    &:after {
+    &::after {
       height: 15px;
       background-size: auto 15px;
     }
@@ -179,11 +180,11 @@
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),
-  (min-width: 768px) and (min-resolution: 1.5dppx) {
+(min-width: 768px) and (min-resolution: 1.5dppx) {
 
-    .reviews__wrapper {
-      background-image: url("../img/review@2x.jpg");
-    }
+  .reviews__wrapper {
+    background-image: url("../img/review@2x.jpg");
+  }
 
 }
 
@@ -193,7 +194,7 @@
     padding-bottom: 93px;
     margin-bottom: 142px;
 
-    &:after {
+    &::after {
       height: 20px;
       background-size: auto 20px;
     }

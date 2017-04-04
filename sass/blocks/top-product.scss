@@ -3,7 +3,7 @@
   padding-bottom: 45px;
   margin-bottom: 27px;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -93,7 +93,7 @@
     padding-bottom: 68px;
     margin-bottom: 50px;
 
-    &:after {
+    &::after {
       height: 15px;
       background-size: auto 15px;
     }
@@ -148,7 +148,7 @@
     margin-bottom: 58px;
     padding-bottom: 100px;
 
-    &:after {
+    &::after {
       height: 20px;
       background-size: auto 20px;
     }

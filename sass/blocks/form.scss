@@ -39,7 +39,7 @@
   font-size: 17px;
   background-color: #ffffff;
 }
-.form__radio:checked + .form__label:after {
+.form__radio:checked + .form__label::after {
   content: "";
   position: absolute;
   top: 68%;
@@ -56,7 +56,7 @@
   display: block;
 }
 
-.form__fieldset-type .form__label:before {
+.form__fieldset-type .form__label::before {
   content: "";
   position: absolute;
   top: 70%;
@@ -68,18 +68,28 @@
   border-radius: 50%;
 }
 
-.form__fieldset-color .form__label:before {
+.form__fieldset-type .form__label:hover::before,
+.form__fieldset-color .form__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__fieldset-type .form__label:active::before,
+.form__fieldset-color .form__label:active::before {
+  border-color: #cecece;
+}
+
+.form__fieldset-color .form__label::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   border: 2px solid #444444;
 }
 
-.form__checkbox:checked + .form__label:after {
+.form__checkbox:checked + .form__label::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -89,9 +99,9 @@
   background: url("../img/icon-tick.svg") no-repeat 0 0;
 }
 
-  .form__inner-for-input {
-    position: relative;
-  }
+.form__inner-for-input {
+  position: relative;
+}
 
 .form__icon-email {
   position: absolute;
@@ -112,12 +122,12 @@
 }
 
 .form__fieldset-contacts input:hover + .form__icon {
-    fill: #62d1ba;
+  fill: #62d1ba;
 }
 
 .form__fieldset-contacts input:focus + .form__icon {
-    fill: #62d1ba;
-  }
+  fill: #62d1ba;
+}
 
 .form__wrapper input {
 
@@ -145,7 +155,7 @@
   color: #444444;
 }
 
-.form__fieldset__name input[type="text"]:focus::placeholder {
+.form__fieldset-name input[type="text"]:focus::placeholder {
   opacity: 1;
   color: #444444;
 }
@@ -197,22 +207,22 @@ input {
   margin-bottom: 0;
 }
 
-.form__fieldset__name input {
+.form__fieldset-name input {
   width: 100%;
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 25px;
 }
 
-.form__fieldset__name input:last-child {
+.form__fieldset-name input:last-child {
   margin-bottom: 0;
 }
 
-.form__fieldset__name label {
+.form__fieldset-name label {
   margin-bottom: 5px;
 }
 
-.form__fieldset__name input[type="text"]::placeholder {
+.form__fieldset-name input[type="text"]::placeholder {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
@@ -289,7 +299,7 @@ input {
 
 }
 
-.form__fieldset__name input,
+.form__fieldset-name input,
 .form__fieldset-contacts input,
 .form__fieldset-comment textarea  {
   font-size: 17px;
@@ -297,7 +307,7 @@ input {
 
 @media #{$mobile-widths-only} {
 
-  .form__radio:checked + .form__label:after {
+  .form__radio:checked + .form__label::after {
     left: 12px;
     top: 39%;
   }
@@ -350,7 +360,11 @@ input {
 
   }
 
-  .form__fieldset-type .form__label:before {
+  .form__fieldset .form__label-mail::after {
+    width: 69%;
+  }
+
+  .form__fieldset-type .form__label::before {
     width: 37px;
     height: 37px;
     top: 37%;
@@ -376,16 +390,16 @@ input {
     margin-bottom: 28px;
   }
 
-  .form__fieldset__name label {
+  .form__fieldset-name label {
     margin-bottom: 2px;
   }
 
-  .form__fieldset__name input {
+  .form__fieldset-name input {
     margin-bottom: 22px;
   }
 
   .form__fieldset-contacts label {
-    margin-bottom: 9px;
+    margin-bottom: 6px;
   }
 
   .form__fieldset-contacts {
@@ -398,6 +412,10 @@ input {
 
   .form__fieldset .form__input-lastname {
     margin-bottom: 19px;
+  }
+
+  .form__fieldset .form__legend-color {
+    margin-bottom: 36px;
   }
 
 }
@@ -472,7 +490,7 @@ input {
     width: 225px;
     margin-bottom: 58px;
 
-    &:before {
+    &::before {
       width: 51px;
       height: 51px;
       left: -10px;
@@ -492,26 +510,26 @@ input {
     align-items: baseline;
   }
 
-  .form__fieldset__name input {
+  .form__fieldset-name input {
     margin-bottom: 40px;
     padding-top: 0;
   }
 
-  .form__fieldset__name input:nth-of-type(1) {
+  .form__fieldset-name input:nth-of-type(1) {
     width: 86%;
   }
 
-  .form__fieldset__name input:nth-of-type(2),
-  .form__fieldset__name input:nth-of-type(3) {
+  .form__fieldset-name input:nth-of-type(2),
+  .form__fieldset-name input:nth-of-type(3) {
     width: 75%;
   }
 
-  .form__fieldset__name label {
+  .form__fieldset-name label {
     margin-right: 19px;
     margin-bottom: 0;
   }
 
-  .form__fieldset__name input[type="text"]::placeholder {
+  .form__fieldset-name input[type="text"]::placeholder {
     font-size: 19px;
   }
 
@@ -609,21 +627,21 @@ input {
   .form__wrapper .form__fieldset-comment {
     padding-top: 50px;
     padding-bottom: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
-  .form__fieldset__name input {
+  .form__fieldset-name input {
     box-sizing: border-box;
     padding-left: 17px;
   }
 
-  .form__fieldset__name input,
+  .form__fieldset-name input,
   .form__fieldset-contacts input,
   .form__fieldset-comment textarea {
     font-size: 19px;
   }
 
-  .form__checkbox:checked + .form__label:after {
+  .form__checkbox:checked + .form__label::after {
     left: 3px;
     border: -7px;
     width: 32px;
@@ -694,16 +712,16 @@ input {
     margin-bottom: 0;
   }
 
-  .form__fieldset__name .form__inner-label {
+  .form__fieldset-name .form__inner-label {
     width: 700px;
   }
 
-  .form__fieldset__name input:nth-of-type(1) {
+  .form__fieldset-name input:nth-of-type(1) {
     width: 90%;
   }
 
-  .form__fieldset__name input:nth-of-type(2),
-  .form__fieldset__name input:nth-of-type(3) {
+  .form__fieldset-name input:nth-of-type(2),
+  .form__fieldset-name input:nth-of-type(3) {
     width: 82%;
   }
 
@@ -743,7 +761,7 @@ input {
     margin-bottom: 24px;
   }
 
-  .form__fieldset__name .form__legend {
+  .form__fieldset-name .form__legend {
     margin-right: 56px;
   }
 

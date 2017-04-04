@@ -25,3 +25,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+//
+//HTML {
+//  background-repeat: no-repeat;
+//  background-position:  50% 0;
+//  /* По умолчанию мобильный макет */
+//  background-image: url( "../img/preview/mishka-index-mobile.jpg" );
+//}
+//
+///* Планшет */
+//@media ( min-width: 768px ) {
+//
+//  HTML {
+//    /* Планшетный макет */
+//    background-image: url( "../img/preview/mishka-index-tablet.jpg" );
+//  }
+//
+//}
+//
+///* Десктоп */
+//@media ( min-width: 1150px ) {
+//
+//  HTML {
+//    /* Десктопный макет */
+//    background-image: url( "../img/preview/mishka-index-desktop.jpg" );
+//  }
+//
+//}
+//
+//BODY {
+//  opacity: .5;
+//}
