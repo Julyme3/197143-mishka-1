@@ -84,7 +84,7 @@
     line-height: 50px;
     padding-left: 0;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: -15px;
@@ -146,7 +146,7 @@
     font-size: $fsize-title-desktop;
     line-height: 57px;
 
-    &:after {
+    &::after {
       left: -110px;
       top: -7px;
     }
