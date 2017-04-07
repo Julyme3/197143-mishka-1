@@ -1,7 +1,7 @@
 .top-product {
   position: relative;
   padding-bottom: 45px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   &::after {
     content: "";
@@ -50,7 +50,7 @@
 
 .top-product__title {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   font-size: $fsize-subtitle-mobile;
   line-height: 30px;
 }
