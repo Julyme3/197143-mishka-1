@@ -1,7 +1,7 @@
 .reviews {
   position: relative;
-  padding-bottom: 50px;
-  margin-bottom: 39px;
+  padding-bottom: 52px;
+  margin-bottom: 34px;
 
   &::after {
     content: "";
@@ -18,7 +18,7 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   font-size: $fsize-subtitle-mobile;
   line-height: 30px;
 }
@@ -31,7 +31,7 @@
 
   blockquote {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     font-size: 15px;
     line-height: 30px;
     color: $color-body;
@@ -39,7 +39,7 @@
 
   cite {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     font-style: normal;
   }
 
@@ -55,13 +55,13 @@
 }
 
 .reviews__nickname {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   color: #444444;
 }
 
 .reviews__btn {
-  margin-top: 41px;
+  margin-top: 38px;
   width: 260px;
   box-sizing: border-box;
   padding: 15px 76px;
@@ -87,6 +87,10 @@
 }
 
 @media #{$mobile-widths-only} {
+
+  .reviews__author {
+    margin-bottom: 0;
+  }
 
   .reviews__arrow {
     min-height: 50px;

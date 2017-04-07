@@ -1,6 +1,6 @@
 .contacts__title {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -33,7 +33,7 @@
 }
 
 .contacts__inner {
-  margin-bottom: 35px;
+  margin-bottom: 41.5px;
 }
 
 @media #{$mobile-widths-only} {
@@ -60,6 +60,10 @@
   .contacts__inner {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .contacts__table tr:first-child .contacts__key {
+    white-space: nowrap;
   }
 
 }
