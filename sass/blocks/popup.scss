@@ -124,3 +124,14 @@
   }
 
 }
+
+// анимация для попапа 
+
+  @keyframes show {
+    0% {top: -2000px};
+    100% {top: 50%};
+  }
+  
+  .popup--show {
+    animation: show 2s forwards;
+  }

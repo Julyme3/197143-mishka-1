@@ -118,8 +118,8 @@
 @media #{$mobile-widths-only} {
 
   .video-block {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: calc((30*100%)/320);
+    padding-right: calc((30*100%)/320);
     padding-bottom: 0;
     padding-top: 0;
   }
@@ -130,6 +130,21 @@
 
   .video-block__title::before {
     left: 30px;
+  }
+
+  .video-block__inner {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-block__btn {
+    width: 100%;
+  }
+
+  .video-block__inner-btn {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
 }

@@ -108,8 +108,8 @@
 
   .main-navigation__item-list {
     box-sizing: border-box;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: calc((30*100%)/320);
+    padding-right: calc((30*100%)/320);
   }
 
   .main-navigation__link-list {

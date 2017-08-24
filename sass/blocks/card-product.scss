@@ -12,8 +12,9 @@
 
 .card-product__link {
   display: block;
-  width: 260px;
-  height: 314px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   margin-bottom: 32px;
 }
 
@@ -30,9 +31,20 @@
 }
 
 @media #{$mobile-widths-only} {
+  
+  .card-product {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card-product__btn {
+    width: 100%;
+  }
 
   .card-product__link {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

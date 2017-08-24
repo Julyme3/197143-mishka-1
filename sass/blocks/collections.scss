@@ -24,7 +24,8 @@
 .collections__link-interior::after {
   content: "";
   position: absolute;
-  top: 32px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 30px;
   width: 42px;
   height: 63px;
@@ -39,7 +40,8 @@
 .collections__link-toys::after {
   content: "";
   position: absolute;
-  top: 32px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 30px;
   width: 62px;
   height: 62px;
@@ -72,6 +74,16 @@
 
 .collections__item {
   @include container;
+}
+
+@media #{$mobile-widths-only} {
+  
+  .collections__link {
+    padding-top: calc((8 * 100%) / 100);
+    padding-bottom: calc((8 * 100%) / 100);
+    padding-left: calc((30 * 100%) / 320);
+  }
+  
 }
 
 @media #{$tablet-widths} {

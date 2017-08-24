@@ -33,6 +33,19 @@
   line-height: 30px;
 }
 
+@media #{$mobile-widths-only} {
+
+  .form-main__header {
+    width: auto;
+
+    p {
+      padding-left: calc((30*100%)/320);
+    }
+
+  }
+
+}
+
 @media #{$tablet-widths} {
 
   .form-main {

@@ -19,6 +19,19 @@
   line-height: 30px;
 }
 
+@media #{$mobile-widths-only} {
+
+  .catalog-main__inner {
+    width: auto;
+  }
+
+  .catalog-product__wrapper {
+    padding-left: calc((30*100%)/320);
+    padding-right: calc((30*100%)/320);
+  }
+
+}
+
 @media #{$tablet-widths} {
 
   .catalog {

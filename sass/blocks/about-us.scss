@@ -41,18 +41,14 @@
 }
 
 @media #{$mobile-widths-only} {
+  
+  .about-us__wrapper {
+    padding-left: calc((30*100%)/320);
+    padding-right: calc((30*100%)/320);
+  }
 
   .about-us__item {
-    width: 210px;
     line-height: 20px;
-  }
-
-  .about-us__item:first-child {
-    width: 195px;
-  }
-
-  .about-us__item:nth-child(5) {
-    width: 250px;
   }
 
 }
